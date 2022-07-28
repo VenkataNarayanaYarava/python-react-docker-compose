@@ -70,7 +70,7 @@ Building the docker image api/Dockerfile
 
 Drafted the Dockerfile to build the Docker Image to make it containarize, sys-stats/Dockerfile
 
----
+
 		FROM node:13.12.0-alpine
 		WORKDIR /app
 		COPY sys-stats/ /app
@@ -79,7 +79,7 @@ Drafted the Dockerfile to build the Docker Image to make it containarize, sys-st
 		RUN npm run build
 		EXPOSE 3000
 		CMD ["npm", "start"]
----
+
 
 **Step 5:**
 
