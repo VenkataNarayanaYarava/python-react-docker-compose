@@ -33,7 +33,7 @@ As part of dockerize the application, we would require to create a Dockerfile fo
 ### API FOLDER
 Step 1: Drafted the Dockerfile to build the Docker Image to make it containarize, 
 #### Dockerfile
----
+
 		FROM python:3.6
 
 		COPY . . 
