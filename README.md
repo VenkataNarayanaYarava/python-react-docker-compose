@@ -34,29 +34,29 @@ As part of dockerize the application, we would require to create a Dockerfile fo
 Step 1: Drafted the Dockerfile to build the Docker Image to make it containarize, 
 #### Dockerfile
 ---
-> FROM python:3.6
+		FROM python:3.6
 
-> COPY . . 
+		COPY . . 
 
-> RUN pip install -r api/requirements.txt
+		RUN pip install -r requirements.txt
 
-> EXPOSE 5000
+		EXPOSE 5000
 
-> CMD ["python", "app.py"]
----
+		CMD ["python", "app.py"]
+
 
 **Step 2:**
 After drafting was checking the requirements.txt and app.py files. Found that dependency details were missed. So added the python modules and respective dependencies in requirements.txt file. 
 #### requirements.txt
----
-> Flask==1.1.4
 
-> psutil==5.9.1
+		Flask==1.1.4
 
-> Flask-Cors==3.0.10
+		psutil==5.9.1
 
-> gunicorn
----
+		Flask-Cors==3.0.10
+
+		gunicorn
+
 
 **Step 3:**
 
